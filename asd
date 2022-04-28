@@ -116,7 +116,7 @@ if getgenv().AutoRender == true then
 	TextLabel.Position = UDim2.new(0.5, 0, 0.419999987, 0)
 	TextLabel.Size = UDim2.new(0, 279, 0, 34)
 	TextLabel.Font = Enum.Font.Gotham
-	TextLabel.Text = "#FUCKIKU , Welcome "..game.Players.LocalPlayer.Name.." yes that is ur username if u wanna see it monkey"
+	TextLabel.Text = "Aces alt control W, Welcome "..game.Players.LocalPlayer.Name.."
 	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TextLabel.TextScaled = true
 	TextLabel.TextSize = 14.000
@@ -1011,7 +1011,7 @@ if Player then
 						StopAutoGrindStrength()
 					elseif Chat == ".bring" then
 						Bring()
-					elseif Chat == ".wallet" then
+					elseif Chat == ".wallet on" then
 						ShowWallet()
 					elseif Chat == ".wallet off" then
 						RemoveWallet()
@@ -1083,7 +1083,7 @@ if Player then
 						TextLabel.Position = UDim2.new(0.5, 0, 0.419999987, 0)
 						TextLabel.Size = UDim2.new(0, 279, 0, 34)
 						TextLabel.Font = Enum.Font.Gotham
-						TextLabel.Text = "Aces ALt control"
+						TextLabel.Text = "Aces alt control W"
 						TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 						TextLabel.TextScaled = true
 						TextLabel.TextSize = 14.000
@@ -1092,7 +1092,7 @@ if Player then
 
 						game:GetService("RunService"):Set3dRenderingEnabled(false)
 
-					elseif Chat == ".stop" then
+					elseif Chat == ".drop" then
 						CustomDrop = false
 						StopDrop()
 					elseif Chat == ".setup vault" then
@@ -1155,7 +1155,7 @@ if Player then
 						Load = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
 						Load.Looped = true
 						Load:Play()
-					elseif Chat == ".stop air" then
+					elseif Chat == ".unairlock" then
 						for i,v in pairs(game.Players.LocalPlayer.Character.HumanoidRootPart:GetChildren()) do
 							if v:IsA("BodyPosition") then
 								v:Destroy()
@@ -1377,7 +1377,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+10000000) or not CustomDrop
 						end)()
-					elseif Chat == ".mask on" then
+					elseif Chat == ".mask" then
 						local plr = game.Players.LocalPlayer
 						local c = plr.Character
 						local Root = c.PrimaryPart
@@ -1396,7 +1396,7 @@ if Player then
 							c.Mask:Activate()
 						end
 						Root.CFrame = OldCF
-					elseif Chat == ".mask off" then
+					elseif Chat == ".unmask" then
 						local plr = game.Players.LocalPlayer
 						local c = plr.Character
 						local Root = c.PrimaryPart
