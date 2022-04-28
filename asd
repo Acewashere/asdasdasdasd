@@ -1083,7 +1083,7 @@ if Player then
 						TextLabel.Position = UDim2.new(0.5, 0, 0.419999987, 0)
 						TextLabel.Size = UDim2.new(0, 279, 0, 34)
 						TextLabel.Font = Enum.Font.Gotham
-						TextLabel.Text = "Dont buy or touch shitKU last person to use it was diagnosed with autism"
+						TextLabel.Text = "Aces ALt control"
 						TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 						TextLabel.TextScaled = true
 						TextLabel.TextSize = 14.000
