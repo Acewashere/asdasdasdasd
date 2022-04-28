@@ -116,7 +116,7 @@ if getgenv().AutoRender == true then
 	TextLabel.Position = UDim2.new(0.5, 0, 0.419999987, 0)
 	TextLabel.Size = UDim2.new(0, 279, 0, 34)
 	TextLabel.Font = Enum.Font.Gotham
-	TextLabel.Text = "Aces alt control W, Welcome "..game.Players.LocalPlayer.Name.."
+	TextLabel.Text = "Aces alt control W , Welcome "..game.Players.LocalPlayer.Name.." yes that is ur username if u wanna see it monkey"
 	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TextLabel.TextScaled = true
 	TextLabel.TextSize = 14.000
@@ -1083,7 +1083,7 @@ if Player then
 						TextLabel.Position = UDim2.new(0.5, 0, 0.419999987, 0)
 						TextLabel.Size = UDim2.new(0, 279, 0, 34)
 						TextLabel.Font = Enum.Font.Gotham
-						TextLabel.Text = "Aces alt control W"
+						TextLabel.Text = "Aces alt control free"
 						TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 						TextLabel.TextScaled = true
 						TextLabel.TextSize = 14.000
@@ -1092,7 +1092,7 @@ if Player then
 
 						game:GetService("RunService"):Set3dRenderingEnabled(false)
 
-					elseif Chat == ".drop" then
+					elseif Chat == ".stop" then
 						CustomDrop = false
 						StopDrop()
 					elseif Chat == ".setup vault" then
@@ -1155,7 +1155,7 @@ if Player then
 						Load = game.Players.LocalPlayer.Character.Humanoid.Animator:LoadAnimation(Anim)
 						Load.Looped = true
 						Load:Play()
-					elseif Chat == ".unairlock" then
+					elseif Chat == ".stop air" then
 						for i,v in pairs(game.Players.LocalPlayer.Character.HumanoidRootPart:GetChildren()) do
 							if v:IsA("BodyPosition") then
 								v:Destroy()
@@ -1222,7 +1222,7 @@ if Player then
 						local newStr = Abbreviate(AmountOfMoney)
 						newStr = tostring(newStr)
 						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(newStr, 'All')
-					elseif Chat == ".cdrop 100k" then
+					elseif Chat == ".customdrop 100k" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1253,7 +1253,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+100000) or not CustomDrop
 						end)()
-					elseif Chat == ".cdrop 500k" then
+					elseif Chat == ".customdrop 500k" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1284,7 +1284,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+500000) or not CustomDrop
 						end)()
-					elseif Chat == ".cdrop 1m" then
+					elseif Chat == ".customdrop 1m" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1315,7 +1315,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+1000000) or not CustomDrop
 						end)()
-					elseif Chat == ".cdrop 5m" then
+					elseif Chat == ".customdrop 5m" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1346,7 +1346,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+5000000) or not CustomDrop
 						end)()
-					elseif Chat == ".cdrop 10m" then
+					elseif Chat == ".customdrop 10m" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1377,7 +1377,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+10000000) or not CustomDrop
 						end)()
-					elseif Chat == ".mask" then
+					elseif Chat == ".mask on" then
 						local plr = game.Players.LocalPlayer
 						local c = plr.Character
 						local Root = c.PrimaryPart
@@ -1396,7 +1396,7 @@ if Player then
 							c.Mask:Activate()
 						end
 						Root.CFrame = OldCF
-					elseif Chat == ".unmask" then
+					elseif Chat == ".mask off" then
 						local plr = game.Players.LocalPlayer
 						local c = plr.Character
 						local Root = c.PrimaryPart
