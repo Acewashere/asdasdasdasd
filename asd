@@ -116,7 +116,7 @@ if getgenv().AutoRender == true then
 	TextLabel.Position = UDim2.new(0.5, 0, 0.419999987, 0)
 	TextLabel.Size = UDim2.new(0, 279, 0, 34)
 	TextLabel.Font = Enum.Font.Gotham
-	TextLabel.Text = " alt control W , Welcome "..game.Players.LocalPlayer.Name.." yes that is ur username if u wanna see it monkey"
+	TextLabel.Text = " Aces alt control W , Welcome "..game.Players.LocalPlayer.Name.." yes that is ur username if u wanna see it monkey"
 	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TextLabel.TextScaled = true
 	TextLabel.TextSize = 14.000
