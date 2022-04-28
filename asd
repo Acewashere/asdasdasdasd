@@ -116,7 +116,7 @@ if getgenv().AutoRender == true then
 	TextLabel.Position = UDim2.new(0.5, 0, 0.419999987, 0)
 	TextLabel.Size = UDim2.new(0, 279, 0, 34)
 	TextLabel.Font = Enum.Font.Gotham
-	TextLabel.Text = "Aces alt control , Welcome "..game.Players.LocalPlayer.Name.." yes that is ur username if u wanna see it monkey"
+	TextLabel.Text = "#FUCKIKU , Welcome "..game.Players.LocalPlayer.Name.." yes that is ur username if u wanna see it monkey"
 	TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TextLabel.TextScaled = true
 	TextLabel.TextSize = 14.000
@@ -1222,7 +1222,7 @@ if Player then
 						local newStr = Abbreviate(AmountOfMoney)
 						newStr = tostring(newStr)
 						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(newStr, 'All')
-					elseif Chat == ".customdrop 100k" then
+					elseif Chat == ".cdrop 100k" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1253,7 +1253,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+100000) or not CustomDrop
 						end)()
-					elseif Chat == ".customdrop 500k" then
+					elseif Chat == ".cdrop 500k" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1284,7 +1284,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+500000) or not CustomDrop
 						end)()
-					elseif Chat == ".customdrop 1m" then
+					elseif Chat == ".cdrop 1m" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1315,7 +1315,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+1000000) or not CustomDrop
 						end)()
-					elseif Chat == ".customdrop 5m" then
+					elseif Chat == ".cdrop 5m" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1346,7 +1346,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+5000000) or not CustomDrop
 						end)()
-					elseif Chat == ".customdrop 10m" then
+					elseif Chat == ".cdrop 10m" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
