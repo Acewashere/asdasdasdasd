@@ -1011,14 +1011,14 @@ if Player then
 						StopAutoGrindStrength()
 					elseif Chat == ".bring" then
 						Bring()
-					elseif Chat == ".wallet on" then
+					elseif Chat == ".wallet" then
 						ShowWallet()
 					elseif Chat == ".wallet off" then
 						RemoveWallet()
 					elseif Chat == ".drop" then
 						CustomDrop = false
 						Drop()
-					elseif Chat == ".circle host" then
+					elseif Chat == ".circle then
 						Circle()
 
 						print("Entered the command")
@@ -1196,11 +1196,11 @@ if Player then
 
 					elseif Chat == ".ad off" then
 						AddOn = false
-					elseif Chat ~= ".ad off" and Chat:match(".ad on") and AddOn == false then
+					elseif Chat ~= ".ad off" and Chat:match(".ad ") and AddOn == false then
 
 
 
-						local newStr, replaced = string.gsub(Chat, ".ad on", "")
+						local newStr, replaced = string.gsub(Chat, ".ad ", "")
 
 						AddOn = true
 						coroutine.wrap(function()
@@ -1222,7 +1222,7 @@ if Player then
 						local newStr = Abbreviate(AmountOfMoney)
 						newStr = tostring(newStr)
 						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(newStr, 'All')
-					elseif Chat == ".customdrop 100k" then
+					elseif Chat == ".cdrop 100k" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1253,7 +1253,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+100000) or not CustomDrop
 						end)()
-					elseif Chat == ".customdrop 500k" then
+					elseif Chat == ".cdrop 500k" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1284,7 +1284,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+500000) or not CustomDrop
 						end)()
-					elseif Chat == ".customdrop 1m" then
+					elseif Chat == ".cdrop 1m" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1315,7 +1315,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+1000000) or not CustomDrop
 						end)()
-					elseif Chat == ".customdrop 5m" then
+					elseif Chat == ".cdrop 5m" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
@@ -1346,7 +1346,7 @@ if Player then
 								end 
 							until Money >= (OldMoney+5000000) or not CustomDrop
 						end)()
-					elseif Chat == ".customdrop 10m" then
+					elseif Chat == ".cdrop 10m" then
 						Dropping = false
 						local Drop = workspace.Ignored.Drop
 						local OldMoney = 0
